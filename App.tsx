@@ -33,45 +33,6 @@ const SARCASTIC_PHRASES = [
   "Zaten sevmezdik"
 ];
 
-const INITIAL_NAMES = [
-  "Ahmet HACIOGLU",
-  "Atakan ULUDAG",
-  "Aykut AKKAYA",
-  "Bayram ALKAN",
-  "Birol ISIK",
-  "Burhan Kilic",
-  "Cagri EROL",
-  "Deniz DOGRU",
-  "Ergun MURAT",
-  "Erhan ACIPINAR",
-  "Firat KARAYAGLI",
-  "Furkan DIBET",
-  "Furkan KINYAS",
-  "Gokhan TOPRAKT...",
-  "Gorkem TUTUNCU",
-  "Huseyin SARRAC",
-  "Ihsan BEYHAN",
-  "Koralp DURSUN",
-  "Mehdi SEL",
-  "Mert BILGIC",
-  "Mesut SEYHAN",
-  "Metin PAKSOY",
-  "Onur AKSU",
-  "Onurkan BAKIRCI",
-  "Ozgur SAHIN",
-  "Refik SARITEPE",
-  "Sabri SENBABAO...",
-  "Selcuk DURSUN",
-  "Selman REIS",
-  "Sercan SOLMAZ",
-  "Tugba KUCUKGU...",
-  "Turan AYMIS",
-  "Ugur YILMAZ",
-  "Yasin KARATAS",
-  "Yavuz KARABULUT",
-  "Yusuf UREN"
-];
-
 const FlashyPhrases: React.FC = () => {
   const [phrases, setPhrases] = useState<{ id: number; text: string; top: string; left: string; rotate: string }[]>([]);
   const nextId = useRef(0);
@@ -116,16 +77,29 @@ const FlashyPhrases: React.FC = () => {
 };
 
 const App: React.FC = () => {
-  const [participants, setParticipants] = useState<Participant[]>(() =>
-    INITIAL_NAMES.map((name, idx) => ({
-      id: crypto.randomUUID(),
-      name,
-      color: COLORS[idx % COLORS.length]
-    }))
-  );
+  const [participants, setParticipants] = useState<Participant[]>([]);
+  const [loading, setLoading] = useState(true);
   const [newName, setNewName] = useState('');
   const [result, setResult] = useState<WheelSegment | null>(null);
   const [isSpinning, setIsSpinning] = useState(false);
+
+  useEffect(() => {
+    fetch('/participants.json')
+      .then(res => res.json())
+      .then(data => {
+        const loaded: Participant[] = data.names.map((name: string, idx: number) => ({
+          id: crypto.randomUUID(),
+          name,
+          color: COLORS[idx % COLORS.length]
+        }));
+        setParticipants(loaded);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Failed to load participants:', err);
+        setLoading(false);
+      });
+  }, []);
 
   const wheelSegments = useMemo(() => {
     const participantSegments: WheelSegment[] = participants.map((p) => ({
