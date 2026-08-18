@@ -2,19 +2,74 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Kovuldun Raffle Wheel 🎡
 
-This contains everything you need to run your app locally.
+Eğlenceli ve sarkaztik bir çarkı döndür, kimin "kovulduğunu" öğren!
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+## 🚀 Hızlı Başlangıç
 
-## Run Locally
+**Gereksinimler:** Node.js
 
-**Prerequisites:**  Node.js
+1. Bağımlılıkları kur:
 
+   ```bash
+   npm install
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. `GEMINI_API_KEY` değerini [.env.local](.env.local) dosyasında ayarla (Gemini API anahtarı)
+
+3. Uygulamayı çalıştır:
+   ```bash
+   npm run dev
+   ```
+
+## 📋 Katılımcıları Yönet
+
+Katılımcıların adları [`public/participants.json`](public/participants.json) dosyasında tutulur.
+
+### Katılımcı Eklemek:
+
+- UI'dan "Katılımcı Ekle" bölümünü kullan, ya da
+- `public/participants.json` dosyasını doğrudan düzenle
+
+### JSON Formatı:
+
+```json
+{
+  "names": [
+    "Ahmet HACIOGLU",
+    "Atakan ULUDAG",
+    ...
+  ]
+}
+```
+
+## 🎨 Özellikler
+
+- ✨ Dinamik çark (katılımcı sayısına göre uyarlanır)
+- 🎭 Sarkaztik mesajlar ve eğlenceli animasyonlar
+- ➕ Runtime'da katılımcı ekleme/silme
+- 🎉 Sonuç animasyonları ve confetti efektleri
+- 🎲 Seçicilik - PAS ve İFLAS segmentleri içerir
+
+## 📁 Proje Yapısı
+
+```
+├── public/
+│   └── participants.json     # Katılımcı listesi
+├── components/
+│   └── Wheel.tsx            # Çark bileşeni
+├── utils/
+│   └── audio.ts             # Ses yönetimi
+├── App.tsx                  # Ana uygulama
+├── index.tsx                # Entry point
+└── types.ts                 # TypeScript tipleri
+```
+
+## 🛠️ Teknolojiler
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Canvas (Çark çizimi için)
