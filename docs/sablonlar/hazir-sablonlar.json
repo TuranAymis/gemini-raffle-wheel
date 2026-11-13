@@ -1,0 +1,506 @@
+{
+  "app": "Kurala",
+  "schemaVersion": "1.0",
+  "language": "tr",
+  "description": "Kurala rastgele seçim çarkı için hazır şablonlar. options dizileri doğrudan çarka yüklenebilir.",
+  "categories": [
+    {
+      "id": "oyun",
+      "label": "Oyun"
+    },
+    {
+      "id": "eglence",
+      "label": "Eğlence ve Arkadaşlar"
+    },
+    {
+      "id": "egitim-ve-ekip",
+      "label": "Eğitim ve Ekipler"
+    }
+  ],
+  "templates": [
+    {
+      "id": "ea-fc-kariyer-takim-secici",
+      "title": "FIFA / EA FC Kariyer Takım Seçici",
+      "category": "oyun",
+      "description": "Rastgele bir kulüp seçerek kariyer moduna başla.",
+      "options": [
+        "Manchester United",
+        "Valencia",
+        "Roma",
+        "Ajax",
+        "Schalke 04",
+        "Marseille",
+        "Real Betis",
+        "Fiorentina",
+        "Everton",
+        "Sevilla"
+      ],
+      "featured": true,
+      "requiresCustomization": false,
+      "aliases": [
+        "FIFA Kariyer Takımı",
+        "Kariyer Takım Seçici"
+      ],
+      "notes": "Kulüp ve liglerin oyun sürümündeki bulunabilirliği değişebilir."
+    },
+    {
+      "id": "minecraft-rastgele-gorev",
+      "title": "Minecraft Rastgele Görev",
+      "category": "oyun",
+      "description": "Minecraft macerası için rastgele bir görev belirle.",
+      "options": [
+        "Nether’a git",
+        "Ev inşa et",
+        "Ender Dragon’u yen",
+        "Köy bul",
+        "Elmas bul",
+        "Otomatik çiftlik kur",
+        "Bir haritayı keşfet",
+        "Redstone düzeneği yap"
+      ],
+      "featured": true,
+      "requiresCustomization": false
+    },
+    {
+      "id": "valorant-ajan-secici",
+      "title": "Valorant Ajan Seçici",
+      "category": "oyun",
+      "description": "Bu maç oynayacağın ajanı rastgele belirle.",
+      "options": [
+        "Jett",
+        "Sage",
+        "Raze",
+        "Sova",
+        "Omen",
+        "Phoenix",
+        "Killjoy",
+        "Cypher",
+        "Reyna",
+        "Brimstone"
+      ],
+      "featured": true,
+      "requiresCustomization": false,
+      "notes": "Ajan havuzu örnektir; oyun güncellemelerine göre düzenlenebilir."
+    },
+    {
+      "id": "lol-rol-secici",
+      "title": "LoL Rol Seçici",
+      "category": "oyun",
+      "description": "League of Legends maçındaki rolünü seç.",
+      "options": [
+        "Top",
+        "Jungle",
+        "Mid",
+        "ADC",
+        "Support"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "cs2-harita-secici",
+      "title": "CS2 Harita Seçici",
+      "category": "oyun",
+      "description": "Counter-Strike 2 için harita seç.",
+      "options": [
+        "Mirage",
+        "Dust2",
+        "Inferno",
+        "Nuke",
+        "Ancient",
+        "Anubis",
+        "Vertigo"
+      ],
+      "featured": true,
+      "requiresCustomization": false,
+      "notes": "Haritaların güncel harita havuzunda olması oyun sürümüne bağlıdır."
+    },
+    {
+      "id": "ea-fc-mac-takimi",
+      "title": "FIFA / EA FC Maç Takımı",
+      "category": "oyun",
+      "description": "Arkadaşlarınla yapacağın maç için rastgele kulüp seç.",
+      "options": [
+        "Real Madrid",
+        "Barcelona",
+        "Manchester City",
+        "Liverpool",
+        "Bayern Münih",
+        "Arsenal",
+        "Inter",
+        "Paris Saint-Germain",
+        "Juventus",
+        "Galatasaray",
+        "Fenerbahçe",
+        "Beşiktaş"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "oyun-gecesi-secici",
+      "title": "Oyun Gecesi Seçici",
+      "category": "oyun",
+      "description": "Arkadaş grubuyla bugün oynanacak oyunu seç.",
+      "options": [
+        "Minecraft",
+        "CS2",
+        "Valorant",
+        "League of Legends",
+        "Roblox",
+        "Rocket League",
+        "Among Us",
+        "Overcooked"
+      ],
+      "featured": true,
+      "requiresCustomization": false,
+      "aliases": [
+        "Ne Oynayalım?"
+      ]
+    },
+    {
+      "id": "oyun-challenge-secici",
+      "title": "Oyun Challenge Seçici",
+      "category": "oyun",
+      "description": "Oyunu zorlaştıran veya eğlenceli hâle getiren bir meydan okuma seç.",
+      "options": [
+        "Sadece tabanca",
+        "Ekipmansız oyna",
+        "Tek can",
+        "Rastgele karakter seç",
+        "İlk 10 dakika koşma",
+        "Hiç ölmeden tamamla",
+        "Takım arkadaşının seçtiği stratejiyle oyna"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "film-gecesi",
+      "title": "Film Gecesi",
+      "category": "eglence",
+      "description": "Bu akşam izlenecek filmi seç.",
+      "options": [
+        "Inception",
+        "Interstellar",
+        "The Matrix",
+        "Shrek",
+        "The Truman Show",
+        "The Dark Knight",
+        "Spirited Away",
+        "Coco"
+      ],
+      "featured": true,
+      "requiresCustomization": false
+    },
+    {
+      "id": "dizi-secici",
+      "title": "Dizi Seçici",
+      "category": "eglence",
+      "description": "Sıradaki dizini rastgele seç.",
+      "options": [
+        "Breaking Bad",
+        "Dark",
+        "Friends",
+        "The Office",
+        "Stranger Things",
+        "Sherlock",
+        "Brooklyn Nine-Nine",
+        "Black Mirror"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "bugun-ne-yiyelim",
+      "title": "Bugün Ne Yiyelim?",
+      "category": "eglence",
+      "description": "Öğle veya akşam yemeğinde ne yiyeceğine karar ver.",
+      "options": [
+        "Pizza",
+        "Burger",
+        "Döner",
+        "Sushi",
+        "Makarna",
+        "Lahmacun",
+        "Mantı",
+        "Taco",
+        "Pide",
+        "Salata"
+      ],
+      "featured": true,
+      "requiresCustomization": false
+    },
+    {
+      "id": "kim-odeyecek",
+      "title": "Kim Ödeyecek?",
+      "category": "eglence",
+      "description": "Hesabı kimin ödeyeceğini rastgele seç.",
+      "options": [
+        "Katılımcı 1",
+        "Katılımcı 2",
+        "Katılımcı 3",
+        "Katılımcı 4"
+      ],
+      "featured": true,
+      "requiresCustomization": true,
+      "notes": "Katılımcı adlarını kendi grubuna göre değiştir."
+    },
+    {
+      "id": "dogruluk-mu-cesaret-mi",
+      "title": "Doğruluk mu Cesaret mi?",
+      "category": "eglence",
+      "description": "Doğruluk mu yoksa cesaret mi olacağını seç.",
+      "options": [
+        "Doğruluk",
+        "Cesaret"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "hafta-sonu-ne-yapalim",
+      "title": "Hafta Sonu Ne Yapalım?",
+      "category": "eglence",
+      "description": "Hafta sonu etkinliği seç.",
+      "options": [
+        "Sinema",
+        "Bowling",
+        "Piknik",
+        "Oyun gecesi",
+        "Müze",
+        "Doğa yürüyüşü",
+        "Kafe",
+        "Bisiklet turu"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "hangi-ulkeye-gidelim",
+      "title": "Hangi Ülkeye Gidelim?",
+      "category": "eglence",
+      "description": "Seyahat fikri için ülke seç.",
+      "options": [
+        "Japonya",
+        "İtalya",
+        "İspanya",
+        "Norveç",
+        "Portekiz",
+        "Güney Kore",
+        "Yunanistan",
+        "İsviçre",
+        "Tayland",
+        "Kanada"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "kim-baslayacak",
+      "title": "Kim Başlayacak?",
+      "category": "eglence",
+      "description": "Oyuna veya etkinliğe ilk kimin başlayacağını seç.",
+      "options": [
+        "Katılımcı 1",
+        "Katılımcı 2",
+        "Katılımcı 3",
+        "Katılımcı 4"
+      ],
+      "featured": true,
+      "requiresCustomization": true,
+      "aliases": [
+        "Kim İlk Başlayacak?"
+      ],
+      "notes": "Katılımcı adlarını kendi grubuna göre değiştir."
+    },
+    {
+      "id": "sozluye-kim-kalkacak",
+      "title": "Sözlüye Kim Kalkacak?",
+      "category": "egitim-ve-ekip",
+      "description": "Sözlü sınavda sıradaki öğrenciyi seç.",
+      "options": [
+        "Öğrenci 1",
+        "Öğrenci 2",
+        "Öğrenci 3",
+        "Öğrenci 4",
+        "Öğrenci 5",
+        "Öğrenci 6"
+      ],
+      "featured": false,
+      "requiresCustomization": true,
+      "notes": "Öğrenci adlarını sınıf listesiyle değiştir veya CSV/Excel üzerinden içe aktar."
+    },
+    {
+      "id": "ilk-sunumu-kim-yapacak",
+      "title": "İlk Sunumu Kim Yapacak?",
+      "category": "egitim-ve-ekip",
+      "description": "Sunum sırasını başlatacak kişiyi rastgele seç.",
+      "options": [
+        "Katılımcı 1",
+        "Katılımcı 2",
+        "Katılımcı 3",
+        "Katılımcı 4"
+      ],
+      "featured": true,
+      "requiresCustomization": true,
+      "aliases": [
+        "Sunum Sırası"
+      ],
+      "notes": "Tüm sunum sırasını belirlemek için kazananı listeden çıkararak tekrar döndür."
+    },
+    {
+      "id": "bugunun-gorevlisi",
+      "title": "Bugünün Görevlisi",
+      "category": "egitim-ve-ekip",
+      "description": "Sınıf veya ekibin bugünkü görevlisini belirle.",
+      "options": [
+        "Katılımcı 1",
+        "Katılımcı 2",
+        "Katılımcı 3",
+        "Katılımcı 4"
+      ],
+      "featured": false,
+      "requiresCustomization": true
+    },
+    {
+      "id": "rastgele-soru-secici",
+      "title": "Rastgele Soru Seçici",
+      "category": "egitim-ve-ekip",
+      "description": "Öğrenme veya etkinlik için rastgele bir soru seç.",
+      "options": [
+        "Bugün yeni ne öğrendin?",
+        "Konunun ana fikri nedir?",
+        "Bir örnek verebilir misin?",
+        "Bu yöntemin avantajı nedir?",
+        "Alternatif bir çözüm var mı?",
+        "Bu bilgiyi nerede kullanabiliriz?"
+      ],
+      "featured": false,
+      "requiresCustomization": false,
+      "notes": "Soru listesini dersin veya etkinliğin konusuna göre düzenle."
+    },
+    {
+      "id": "toplantida-ilk-kim-konusacak",
+      "title": "Toplantıda İlk Kim Konuşacak?",
+      "category": "egitim-ve-ekip",
+      "description": "Toplantıdaki ilk konuşmacıyı belirle.",
+      "options": [
+        "Katılımcı 1",
+        "Katılımcı 2",
+        "Katılımcı 3",
+        "Katılımcı 4"
+      ],
+      "featured": false,
+      "requiresCustomization": true
+    },
+    {
+      "id": "kahveyi-kim-alacak",
+      "title": "Kahveyi Kim Alacak?",
+      "category": "egitim-ve-ekip",
+      "description": "Kahve alma görevini rastgele paylaştır.",
+      "options": [
+        "Katılımcı 1",
+        "Katılımcı 2",
+        "Katılımcı 3",
+        "Katılımcı 4"
+      ],
+      "featured": false,
+      "requiresCustomization": true
+    },
+    {
+      "id": "gunluk-gorev-secici",
+      "title": "Günlük Görev Seçici",
+      "category": "egitim-ve-ekip",
+      "description": "Günün yapılacak işlerinden birini belirle.",
+      "options": [
+        "Masayı temizle",
+        "Çöpü çıkar",
+        "Bulaşıkları yıka",
+        "Dosyaları düzenle",
+        "Bitkileri sula",
+        "Ortak alanı toparla",
+        "Alışveriş listesini güncelle"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "zor-kariyer-challenge",
+      "title": "Zor Kariyer Challenge",
+      "category": "oyun",
+      "description": "Daha zor bir EA FC kariyer senaryosu seç.",
+      "options": [
+        "Alt ligden takım seç",
+        "En düşük bütçeli takımlardan birini seç",
+        "Yalnızca genç oyuncularla oyna",
+        "En düşük reytingli kadroyla başla",
+        "Transfer bütçesi kullanma",
+        "Sadece altyapı oyuncuları kullan",
+        "Düşme hattındaki bir takımı seç"
+      ],
+      "featured": false,
+      "requiresCustomization": false,
+      "notes": "Senaryoları oyunun sürümüne ve seçtiğin lige göre uyarlayabilirsin."
+    },
+    {
+      "id": "avrupa-devleri",
+      "title": "Avrupa Devleri",
+      "category": "oyun",
+      "description": "Avrupa’nın bilinen büyük kulüplerinden birini seç.",
+      "options": [
+        "Real Madrid",
+        "Barcelona",
+        "Bayern Münih",
+        "Liverpool",
+        "Manchester City",
+        "Arsenal",
+        "Inter",
+        "Juventus",
+        "Paris Saint-Germain",
+        "AC Milan",
+        "Atlético de Madrid",
+        "Borussia Dortmund"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "rastgele-lig-secici",
+      "title": "Rastgele Lig Seçici",
+      "category": "oyun",
+      "description": "Kariyere başlayacağın futbol ligini seç.",
+      "options": [
+        "Premier League",
+        "La Liga",
+        "Bundesliga",
+        "Serie A",
+        "Ligue 1",
+        "Süper Lig",
+        "Eredivisie",
+        "Primeira Liga"
+      ],
+      "featured": false,
+      "requiresCustomization": false,
+      "notes": "Kullanılabilir ligler EA FC oyun sürümüne göre farklılaşabilir."
+    },
+    {
+      "id": "kariyer-kurallari",
+      "title": "Kariyer Kuralları",
+      "category": "oyun",
+      "description": "Futbol kariyer modunda uygulayacağın ek kuralı seç.",
+      "options": [
+        "İlk sezon transfer yasak",
+        "Sadece altyapı oyuncuları",
+        "Yalnızca serbest oyuncular",
+        "30 yaş üstüne transfer yok",
+        "Sadece yerli oyuncu transferi",
+        "Her sezon en iyi oyuncuyu sat",
+        "Maaş bütçesini aşma",
+        "Sadece kiralık transfer yap"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    }
+  ]
+}

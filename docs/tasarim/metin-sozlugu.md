@@ -132,10 +132,7 @@ Dil adları her dilde kendi dilinde yazılır (İngilizce kullanıcı da "Deutsc
 | templates.addToList | Add to list | Listeye ekle | Zur Liste hinzufügen | Añadir a la lista | リストに追加 | 添加到列表 |
 | templates.replace | Replace current list | Mevcut listenin yerine koy | Aktuelle Liste ersetzen | Reemplazar la lista actual | 現在のリストを置き換える | 替换当前列表 |
 | templates.loaded | {name} loaded: {n} options. | {name} şablonu yüklendi: {n} seçenek. | {name} geladen: {n} Optionen. | {name} cargada: {n} opciones. | {name} を読み込みました（{n}件）。 | 已加载“{name}”：{n} 个选项。 |
-| tpl.food | Food | Yemek | Essen | Comida | 食事 | 美食 |
-| tpl.film | Film | Film | Filme | Películas | 映画 | 电影 |
-| tpl.boardgames | Board games | Kutu Oyunları | Brettspiele | Juegos de mesa | ボードゲーム | 桌游 |
-| tpl.teams | Team pairing | Takım Eşleştirme | Teameinteilung | Emparejar equipos | チーム分け | 分组 |
+| templates.customize | Replace the placeholder names with your own. | Yer tutucu adları kendi adlarınızla değiştirin. | Ersetze die Platzhalter durch eigene Namen. | Sustituye los nombres de ejemplo por los tuyos. | 仮の名前を実際の名前に変えてください。 | 请把占位名称换成你自己的名字。 |
 
 ## Geçmiş sonuçlar
 

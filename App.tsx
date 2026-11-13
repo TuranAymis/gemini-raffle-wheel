@@ -10,6 +10,8 @@ import { loadOptions, saveOptions } from './utils/storage';
 import { WHEEL_PALETTE, assignSliceColors } from './components/wheelPalette';
 import { LOCALES, applyLocale, formatNumber, isLocale, saveLocale, savedLocale, translate, type Locale } from './i18n';
 import { MESSAGES, type MessageKey } from './i18n/messages';
+import TemplatesDialog, { type ApplyMode } from './components/TemplatesDialog';
+import { optionsFor, type Template } from './templates/data';
 
 type Translate = (key: MessageKey, vars?: Record<string, string | number>) => string;
 
@@ -42,6 +44,7 @@ const App: React.FC = () => {
   const [notice, setNotice] = useState<{ text: string; tone: 'ok' | 'error' } | null>(null);
   const [result, setResult] = useState<WheelSegment | null>(null);
   const [isSpinning, setIsSpinning] = useState(false);
+  const [templatesOpen, setTemplatesOpen] = useState(false);
 
   useEffect(() => {
     applyLocale(locale);
@@ -195,6 +198,22 @@ const App: React.FC = () => {
     setResult(segment);
   };
 
+  /** Adds a ready-made list to the current list, or replaces it. */
+  const applyTemplate = (template: Template, mode: ApplyMode) => {
+    const incoming = optionsFor(template, locale);
+    const name = template.title[locale];
+    const hint = template.requiresCustomization ? ` ${t('templates.customize')}` : '';
+    if (mode === 'replace') {
+      commit(toParticipants(addOptions([], incoming).list));
+      showNotice(`${t('templates.loaded', { name, n: incoming.length })}${hint}`);
+    } else {
+      const { added, duplicates, overflow } = appendNames(incoming);
+      const extra = overflow > 0 ? ` ${t('import.overflow', { n: overflow, max: MAX_OPTIONS })}` : '';
+      showNotice(`${t('import.result', { n: added, k: duplicates })}${extra}${hint}`, added > 0 ? 'ok' : 'error');
+    }
+    setTemplatesOpen(false);
+  };
+
   return (
     <div className="min-h-screen p-4 md:p-8 flex flex-col items-center max-w-6xl mx-auto overflow-x-hidden">
       <header className="text-center mb-12">
@@ -269,6 +288,9 @@ const App: React.FC = () => {
             <div className="flex justify-between items-center mb-4 gap-2 flex-wrap">
               <h2 className="text-xl font-bold">{t('list.title')} ({participants.length})</h2>
               <div className="flex gap-4 text-xs uppercase font-bold tracking-wider">
+                <button onClick={() => setTemplatesOpen(true)} className="text-slate-400 hover:text-yellow-400 transition-colors">
+                  {t('templates.title')}
+                </button>
                 <button onClick={loadExamples} className="text-slate-400 hover:text-yellow-400 transition-colors">
                   {t('action.examples')}
                 </button>
@@ -329,6 +351,16 @@ const App: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {templatesOpen && (
+        <TemplatesDialog
+          locale={locale}
+          t={t}
+          hasOptions={participants.length > 0}
+          onApply={applyTemplate}
+          onClose={() => setTemplatesOpen(false)}
+        />
+      )}
 
       {result && !isSpinning && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/90 backdrop-blur-xl animate-in fade-in duration-300">
