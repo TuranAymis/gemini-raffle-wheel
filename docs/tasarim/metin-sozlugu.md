@@ -172,3 +172,34 @@ Dil adları her dilde kendi dilinde yazılır (İngilizce kullanıcı da "Deutsc
 | action.addOption | Add option | Seçenek ekle | Option hinzufügen | Añadir opción | 選択肢を追加 | 添加选项 |
 | segment.pass | Pass | PAS | Aussetzen | Pasar | パス | 跳过 |
 | segment.bankrupt | Bankrupt | İFLAS | Pleite | Quiebra | 倒産 | 破产 |
+
+## Ek metinler
+
+| key | en | tr | de | es | ja | zh-CN |
+| --- | --- | --- | --- | --- | --- | --- |
+| wheel.ready | Ready | Hazır | Bereit | Listo | 準備完了 | 就绪 |
+| result.copied | Result copied. | Sonuç kopyalandı. | Ergebnis kopiert. | Resultado copiado. | 結果をコピーしました。 | 结果已复制。 |
+| history.clearBody | This can't be undone. | Bu işlem geri alınamaz. | Das lässt sich nicht rückgängig machen. | Esto no se puede deshacer. | この操作は元に戻せません。 | 此操作无法撤销。 |
+| history.chance | {n} options · {pct}% | {n} seçenek · %{pct} | {n} Optionen · {pct} % | {n} opciones · {pct} % | {n}件 · {pct}% | {n} 个选项 · {pct}% |
+| examples.body | Your current list will be replaced. This can't be undone. | Mevcut liste değiştirilir. Bu işlem geri alınamaz. | Deine aktuelle Liste wird ersetzt. Das lässt sich nicht rückgängig machen. | Tu lista actual se reemplazará. Esto no se puede deshacer. | 現在のリストは置き換えられます。この操作は元に戻せません。 | 当前列表将被替换，此操作无法撤销。 |
+
+## Reklam alanları
+
+| key | en | tr | de | es | ja | zh-CN |
+| --- | --- | --- | --- | --- | --- | --- |
+| ads.label | Advertisement | Reklam | Werbung | Publicidad | 広告 | 广告 |
+| ads.devtoolbox.title | DevToolbox | DevToolbox | DevToolbox | DevToolbox | DevToolbox | DevToolbox |
+| ads.devtoolbox.text | Free tools for developers. | Geliştiriciler için ücretsiz araçlar. | Kostenlose Werkzeuge für Entwickler. | Herramientas gratuitas para desarrolladores. | 開発者のための無料ツール。 | 面向开发者的免费工具。 |
+| ads.devtoolbox.cta | Open DevToolbox | DevToolbox'ı aç | DevToolbox öffnen | Abrir DevToolbox | DevToolboxを開く | 打开 DevToolbox |
+| ads.vento.title | Vento | Vento | Vento | Vento | Vento | Vento |
+| ads.vento.text | Another app from the same creator. | Aynı geliştiricinin başka bir uygulaması. | Eine weitere App desselben Entwicklers. | Otra aplicación del mismo creador. | 同じ開発者の別のアプリ。 | 同一开发者的另一款应用。 |
+| ads.vento.cta | Open Vento | Vento'yu aç | Vento öffnen | Abrir Vento | Ventoを開く | 打开 Vento |
+
+## Çerez onayı
+
+| key | en | tr | de | es | ja | zh-CN |
+| --- | --- | --- | --- | --- | --- | --- |
+| consent.title | Cookies for ads | Reklam çerezleri | Cookies für Werbung | Cookies para anuncios | 広告用のCookie | 广告 Cookie |
+| consent.body | We use Google AdSense to show ads. Google may set cookies for this. Your answer is saved in this browser; you can change it by clearing this site's data. | Reklam göstermek için Google AdSense kullanıyoruz. Google bunun için çerez yerleştirebilir. Cevabınız bu tarayıcıda saklanır; site verilerini temizleyerek değiştirebilirsiniz. | Für Werbung nutzen wir Google AdSense. Google kann dafür Cookies setzen. Deine Antwort wird in diesem Browser gespeichert; du kannst sie ändern, indem du die Website-Daten löschst. | Para mostrar anuncios usamos Google AdSense. Google puede guardar cookies para ello. Tu respuesta se guarda en este navegador; puedes cambiarla borrando los datos del sitio. | 広告の表示にはGoogle AdSenseを使用します。そのためGoogleがCookieを設定する場合があります。回答はこのブラウザに保存され、サイトのデータを削除すると変更できます。 | 我们使用 Google AdSense 显示广告，Google 可能会为此设置 Cookie。您的选择保存在此浏览器中；清除本站数据即可更改。 |
+| consent.accept | Accept | Kabul et | Akzeptieren | Aceptar | 同意する | 同意 |
+| consent.decline | Decline | Reddet | Ablehnen | Rechazar | 拒否 | 拒绝 |

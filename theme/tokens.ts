@@ -77,6 +77,15 @@ export const initialTheme = (): Theme => {
   return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 };
 
+/** Remembers the chosen theme in this browser. */
+export const saveTheme = (theme: Theme): void => {
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+  } catch {
+    // Storage can be blocked: the choice lasts for this visit only.
+  }
+};
+
 /** Writes the token variables into the page and switches the root class to the theme. */
 export const applyTheme = (theme: Theme): void => {
   let style = document.getElementById(STYLE_ID);
