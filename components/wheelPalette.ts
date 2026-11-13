@@ -15,6 +15,12 @@ export const WHEEL_PALETTE = {
   },
 } as const;
 
+/** Hub, pointer and ring colors for each theme. */
+export const WHEEL_CHROME = {
+  light: { ring: "#E2E8F0", hub: "#4F46E5", hubText: "#FFFFFF", pointer: "#0F172A", pointerEdge: "#FFFFFF" },
+  dark: { ring: "#334155", hub: "#818CF8", hubText: "#0F172A", pointer: "#F8FAFC", pointerEdge: "#0F172A" },
+} as const;
+
 export type WheelTheme = keyof typeof WHEEL_PALETTE;
 
 const LABEL_CANDIDATES = ['#0F172A', '#FFFFFF'] as const;
