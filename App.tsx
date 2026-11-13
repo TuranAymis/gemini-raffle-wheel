@@ -27,15 +27,6 @@ import { readConsent, writeConsent, type Consent } from './ads/consent';
 
 type Translate = (key: MessageKey, vars?: Record<string, string | number>) => string;
 
-/** The two fixed slices. Their labels follow the chosen language. */
-const fixedSegments = (t: Translate): WheelSegment[] => [
-  { label: t('segment.pass'), type: SegmentType.PASS, color: '#064e3b' },
-  { label: t('segment.bankrupt'), type: SegmentType.BANKRUPT, color: '#7f1d1d' },
-  { label: t('segment.pass'), type: SegmentType.PASS, color: '#064e3b' },
-  { label: t('segment.bankrupt'), type: SegmentType.BANKRUPT, color: '#7f1d1d' },
-  { label: t('segment.bankrupt'), type: SegmentType.BANKRUPT, color: '#7f1d1d' },
-];
-
 const TIP_KEY = 'kurala-tip-done';
 
 let idCounter = 0;
@@ -109,42 +100,18 @@ const App: React.FC = () => {
     return () => window.clearTimeout(timer);
   }, [notice]);
 
-  // The slices in wheel order, with their colors. The list dots use the same colors, so they always match the wheel.
+  // The slices, one per option, with their colors. The list dots use the same colors, so they always match the wheel.
   const wheel = useMemo(() => {
-    type Item = { kind: 'participant'; participant: Participant } | { kind: 'fixed'; segment: WheelSegment };
-    const order: Item[] = [];
-    const fixed = fixedSegments(t);
-    const totalFixed = fixed.length;
-    const totalParticipants = participants.length;
-
-    if (totalParticipants === 0) {
-      fixed.forEach((segment) => order.push({ kind: 'fixed', segment }));
-    } else {
-      const interval = Math.floor(totalParticipants / totalFixed) || 1;
-      let pIdx = 0;
-      let fIdx = 0;
-      while (pIdx < totalParticipants || fIdx < totalFixed) {
-        for (let i = 0; i < interval && pIdx < totalParticipants; i++) {
-          order.push({ kind: 'participant', participant: participants[pIdx++] });
-        }
-        if (fIdx < totalFixed) {
-          order.push({ kind: 'fixed', segment: fixed[fIdx++] });
-        }
-      }
-    }
-
     const colors = assignSliceColors(
-      order.map((item) => (item.kind === 'fixed' ? item.segment.color : null)),
+      participants.map(() => null),
       WHEEL_PALETTE[theme].slices
     );
     const colorById = new Map<string, string>();
-    const segments: WheelSegment[] = order.map((item, i) => {
-      if (item.kind === 'fixed') return { ...item.segment, color: colors[i] };
-      colorById.set(item.participant.id, colors[i]);
-      return { label: item.participant.name, type: SegmentType.PARTICIPANT, color: colors[i] };
+    const segments: WheelSegment[] = participants.map((participant, i) => {
+      colorById.set(participant.id, colors[i]);
+      return { label: participant.name, type: SegmentType.PARTICIPANT, color: colors[i] };
     });
     return { segments, colorById };
-    // t is derived from locale, which is the real dependency.
   }, [participants, locale, theme]);
 
   // Confetti after a result, unless the result window is closed again.
@@ -382,7 +349,7 @@ const App: React.FC = () => {
           />
 
           <p className="mt-md text-center text-label-md text-ink-secondary" aria-live="polite">
-            {t('wheel.fairness', { pct: formatNumber(100 / sliceCount, locale) })} · {isSpinning ? t('wheel.spinning') : t('wheel.ready')}
+            {sliceCount > 0 && `${t('wheel.fairness', { pct: formatNumber(100 / sliceCount, locale) })} · `}{isSpinning ? t('wheel.spinning') : t('wheel.ready')}
           </p>
           <p className="text-center text-label-sm text-ink-secondary">{t('wheel.hint')}</p>
 
