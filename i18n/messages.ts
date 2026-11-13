@@ -712,22 +712,6 @@ export const MESSAGES = {
     "ja": "選択肢を追加",
     "zh-CN": "添加选项",
   },
-  "segment.pass": {
-    "en": "Pass",
-    "tr": "PAS",
-    "de": "Aussetzen",
-    "es": "Pasar",
-    "ja": "パス",
-    "zh-CN": "跳过",
-  },
-  "segment.bankrupt": {
-    "en": "Bankrupt",
-    "tr": "İFLAS",
-    "de": "Pleite",
-    "es": "Quiebra",
-    "ja": "倒産",
-    "zh-CN": "破产",
-  },
   "wheel.ready": {
     "en": "Ready",
     "tr": "Hazır",

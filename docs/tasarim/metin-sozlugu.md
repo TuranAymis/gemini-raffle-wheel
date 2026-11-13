@@ -170,8 +170,6 @@ Dil adları her dilde kendi dilinde yazılır (İngilizce kullanıcı da "Deutsc
 | share.prompt | Copy the link: | Bağlantıyı kopyalayın: | Link kopieren: | Copia el enlace: | リンクをコピーしてください： | 请复制链接： |
 | common.closeButton | Close | Kapat | Schließen | Cerrar | 閉じる | 关闭 |
 | action.addOption | Add option | Seçenek ekle | Option hinzufügen | Añadir opción | 選択肢を追加 | 添加选项 |
-| segment.pass | Pass | PAS | Aussetzen | Pasar | パス | 跳过 |
-| segment.bankrupt | Bankrupt | İFLAS | Pleite | Quiebra | 倒産 | 破产 |
 
 ## Ek metinler
 

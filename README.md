@@ -40,8 +40,7 @@ En fazla 200 seçenek eklenebilir; her seçenek en fazla 60 karakter olur. Dosya
 - ✨ Dinamik çark (katılımcı sayısına göre uyarlanır)
 - 🎭 Sarkaztik mesajlar ve eğlenceli animasyonlar
 - ➕ Seçenek ekleme ve silme, CSV/Excel içe aktarma, paylaşım bağlantısı
-- 🎉 Sonuç animasyonları ve confetti efektleri
-- 🎲 Seçicilik - PAS ve İFLAS segmentleri içerir
+- 🎉 Sonuç animasyonları ve confetti efektleri
 
 ## 📁 Proje Yapısı
 
