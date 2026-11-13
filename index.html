@@ -4,8 +4,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gemini Raffle Wheel</title>
+    <title>Kurala</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Design tokens: values live in theme/tokens.ts and are written to the page at startup.
+      // Here they are only referred to by name (rgb triplets, so Tailwind opacity modifiers work).
+      const token = (name) => `rgb(var(--color-${name}) / <alpha-value>)`;
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              canvas: token('canvas'),
+              surface: token('surface'),
+              'surface-muted': token('surface-muted'),
+              tint: token('tint'),
+              ink: {
+                DEFAULT: token('text-primary'),
+                secondary: token('text-secondary'),
+                tint: token('text-tint'),
+                'on-primary': token('text-on-primary'),
+              },
+              primary: {
+                DEFAULT: token('primary'),
+                hover: token('primary-hover'),
+              },
+              line: {
+                control: token('border-control'),
+                subtle: token('border-subtle'),
+              },
+              focus: token('focus-ring'),
+              success: token('success'),
+              warning: token('warning'),
+              error: token('error'),
+              overlay: token('overlay'),
+            },
+            fontFamily: {
+              display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+              body: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            fontSize: {
+              display: ['2.5rem', { lineHeight: '3rem', letterSpacing: '-0.02em', fontWeight: '800' }],
+              'headline-lg': ['2rem', { lineHeight: '2.5rem', letterSpacing: '-0.015em', fontWeight: '700' }],
+              'headline-md': ['1.375rem', { lineHeight: '1.875rem', fontWeight: '600' }],
+              'headline-sm': ['1.125rem', { lineHeight: '1.625rem', fontWeight: '600' }],
+              'body-lg': ['1.125rem', { lineHeight: '1.75rem' }],
+              'body-md': ['1rem', { lineHeight: '1.5rem' }],
+              'body-sm': ['0.875rem', { lineHeight: '1.25rem' }],
+              'label-lg': ['1rem', { lineHeight: '1.25rem', fontWeight: '600', letterSpacing: '0.01em' }],
+              'label-md': ['0.875rem', { lineHeight: '1.125rem', fontWeight: '600', letterSpacing: '0.01em' }],
+              'label-sm': ['0.75rem', { lineHeight: '1rem', fontWeight: '500', letterSpacing: '0.02em' }],
+            },
+            spacing: {
+              xs: '0.25rem',
+              sm: '0.5rem',
+              md: '1rem',
+              lg: '1.5rem',
+              xl: '2.5rem',
+            },
+            borderRadius: {
+              control: '8px',
+              card: '16px',
+              modal: '24px',
+            },
+            boxShadow: {
+              1: 'var(--shadow-1)',
+              2: 'var(--shadow-2)',
+              3: 'var(--shadow-3)',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --shadow-1: 0 2px 8px -2px rgba(15, 23, 42, 0.05);
+        --shadow-2: 0 12px 32px -8px rgba(79, 70, 229, 0.12);
+        --shadow-3: 0 20px 40px -12px rgba(15, 23, 42, 0.18);
+      }
+      :root.dark {
+        --shadow-1: 0 4px 12px -2px rgba(0, 0, 0, 0.3);
+        --shadow-2: 0 12px 32px -8px rgba(0, 0, 0, 0.5);
+        --shadow-3: 0 20px 40px -12px rgba(0, 0, 0, 0.6);
+      }
+    </style>
   <script type="importmap">
 {
   "imports": {
@@ -16,7 +103,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-slate-950 text-white min-h-screen">
     <div id="root"></div>

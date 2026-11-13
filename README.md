@@ -23,32 +23,23 @@ Eğlenceli ve sarkaztik bir çarkı döndür, kimin "kovulduğunu" öğren!
    npm run dev
    ```
 
-## 📋 Katılımcıları Yönet
+## 📋 Seçenekleri Yönet
 
-Katılımcıların adları [`public/participants.json`](public/participants.json) dosyasında tutulur.
+İlk açılışta örnek seçenekler (futbolcular) görünür. Listeyi değiştirdiğinizde liste bu tarayıcıya kaydedilir.
 
-### Katılımcı Eklemek:
+- **Tek tek ekle:** "Seçenek Ekle" kutusuna yazıp Ekle'ye basın (Enter de çalışır).
+- **CSV veya Excel'den ekle:** .csv (virgül, noktalı virgül veya sekme ayracıyla) ya da .xlsx dosyası seçin. İlk sütundaki adlar alınır (Excel'de ilk sayfa); üst satır başlıksa atlanır. Aynı adlar tekrar eklenmez.
+- **Temizle:** bütün seçenekleri siler.
+- **Örnekler:** örnek listeyi geri yükler.
+- **Paylaş:** seçenekleri içeren bir bağlantı kopyalar. Bu bağlantıyı açan herkes aynı seçeneklerle çarkı görür. Liste bağlantıya sığmayacak kadar büyükse uyarı çıkar.
 
-- UI'dan "Katılımcı Ekle" bölümünü kullan, ya da
-- `public/participants.json` dosyasını doğrudan düzenle
-
-### JSON Formatı:
-
-```json
-{
-  "names": [
-    "Ahmet HACIOGLU",
-    "Atakan ULUDAG",
-    ...
-  ]
-}
-```
+En fazla 200 seçenek eklenebilir; her seçenek en fazla 60 karakter olur. Dosyalar ve seçenekler yalnızca tarayıcıda işlenir; hiçbir sunucuya gönderilmez.
 
 ## 🎨 Özellikler
 
 - ✨ Dinamik çark (katılımcı sayısına göre uyarlanır)
 - 🎭 Sarkaztik mesajlar ve eğlenceli animasyonlar
-- ➕ Runtime'da katılımcı ekleme/silme
+- ➕ Seçenek ekleme ve silme, CSV/Excel içe aktarma, paylaşım bağlantısı
 - 🎉 Sonuç animasyonları ve confetti efektleri
 - 🎲 Seçicilik - PAS ve İFLAS segmentleri içerir
 
