@@ -4,7 +4,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kurala</title>
+    <title>Kurala: Free Online Raffle and Random Picker Wheel</title>
+    <meta
+      name="description"
+      content="Kurala is a free online raffle and random picker wheel. Add names or options, spin the wheel and pick a winner. Runs in your browser."
+    />
+    <link rel="canonical" href="https://kurala.fun/" />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kurala" />
+    <meta property="og:title" content="Kurala: Free Online Raffle and Random Picker Wheel" />
+    <meta
+      property="og:description"
+      content="Add names or options, spin the wheel and pick a winner. Free, runs in your browser."
+    />
+    <meta property="og:url" content="https://kurala.fun/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Kurala: Free Online Raffle and Random Picker Wheel" />
+    <meta name="twitter:description" content="Add names or options, spin the wheel and pick a winner." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -105,7 +124,17 @@
 </script>
 </head>
   <body class="bg-canvas text-ink font-body min-h-screen antialiased">
-    <div id="root"></div>
+    <!-- Shown until the app starts; the app replaces it. Gives crawlers and link previews real text. -->
+    <div id="root">
+      <main style="max-width: 40rem; margin: 3rem auto; padding: 0 1rem; font-family: Inter, system-ui, sans-serif">
+        <h1 style="font-size: 2rem; font-weight: 700; margin: 0 0 0.75rem">Kurala: free online raffle and random picker wheel</h1>
+        <p style="margin: 0 0 0.75rem">
+          Kurala is a free wheel for raffles, team draws and random picks. Add names or options, spin the wheel and
+          pick a winner.
+        </p>
+        <p style="margin: 0">It runs entirely in your browser. Nothing you type is sent to a server.</p>
+      </main>
+    </div>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
