@@ -29,6 +29,20 @@ export function savedLocale(): Locale {
   return DEFAULT_LOCALE;
 }
 
+/** Locales that have their own address: /tr/ and /en/ (built as static pages with their own title and text). */
+export const PATH_LOCALES: readonly Locale[] = ['tr', 'en'];
+
+/** The language of the address (/tr/… or /en/…), or null on any other address. */
+export function localeFromPath(pathname: string): Locale | null {
+  const match = /^\/(tr|en)(\/|$)/.exec(pathname);
+  return match && (PATH_LOCALES as readonly string[]).includes(match[1]!) ? (match[1] as Locale) : null;
+}
+
+/** The language to start with: the one in the address when there is one, otherwise the one chosen before. */
+export function startingLocale(pathname: string): Locale {
+  return localeFromPath(pathname) ?? savedLocale();
+}
+
 export function saveLocale(locale: Locale): void {
   try {
     localStorage.setItem(STORAGE_KEY, locale);

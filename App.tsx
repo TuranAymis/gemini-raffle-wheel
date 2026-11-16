@@ -9,7 +9,7 @@ import { optionsFromHash, shareUrl } from './utils/share';
 import { loadOptions, saveOptions } from './utils/storage';
 import { addToHistory, loadHistory, saveHistory, type HistoryEntry } from './utils/history';
 import { WHEEL_PALETTE, assignSliceColors } from './components/wheelPalette';
-import { applyLocale, formatNumber, isLocale, saveLocale, savedLocale, translate, type Locale } from './i18n';
+import { applyLocale, formatNumber, isLocale, saveLocale, startingLocale, translate, type Locale } from './i18n';
 import { MESSAGES, type MessageKey } from './i18n/messages';
 import { applyTheme, initialTheme, saveTheme, type Theme } from './theme/tokens';
 import TemplatesDialog, { type ApplyMode } from './components/TemplatesDialog';
@@ -49,7 +49,7 @@ const tipAlreadySeen = (): boolean => {
 type Confirm = 'clear' | 'examples' | 'historyClear';
 
 const App: React.FC = () => {
-  const [locale, setLocale] = useState<Locale>(savedLocale);
+  const [locale, setLocale] = useState<Locale>(() => startingLocale(window.location.pathname));
   const [theme, setTheme] = useState<Theme>(initialTheme);
   const t: Translate = (key, vars) => translate(locale, key, vars);
 
