@@ -501,6 +501,134 @@
       ],
       "featured": false,
       "requiresCustomization": false
+    },
+    {
+      "id": "would-you-rather-kucuk-keyifler",
+      "title": "Ya Bunu Ya Şunu: Küçük Keyifler",
+      "category": "eglence",
+      "description": "Çarkı çevir, keyifli bir günlük seçimi belirle ve konuş.",
+      "options": [
+        "Gün doğumunda piknik mi, gün batımında yürüyüş mü?",
+        "Ağaç ev mi, tekne ev mi?",
+        "Seramik mi öğrenirsin, davul mu?",
+        "Meyve yetiştirmek mi, ekmek pişirmek mi?",
+        "Yatakta kahvaltı mı, parkta piknik mi?",
+        "Hep iyi bir kitap mı, hep iyi bir müzik mi?"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "would-you-rather-imkansiz-secimler",
+      "title": "Ya Bunu Ya Şunu: İmkânsız Seçimler",
+      "category": "eglence",
+      "description": "Gerçek hayatta olamayacak eğlenceli bir seçimi çevirerek belirle.",
+      "options": [
+        "Ağaçlarla konuşmak mı, kuşları anlamak mı?",
+        "Cebe sığan ejderha mı, dev dostça bir salyangoz mu?",
+        "Aya mı gitmek, derin okyanusa mı?",
+        "Yağmuru durdurmak mı, rüzgâr çağırmak mı?",
+        "Bir gün okuyabilmek mi, bir hafta geleceği görebilmek mi?",
+        "Her dili konuşmak mı, hiç uyumamak mı?"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "dogruluk-sorulari-hafif",
+      "title": "Hafif Doğruluklar",
+      "category": "eglence",
+      "description": "Zevkler, anılar veya alışkanlıklar hakkında hafif bir soruyu cevapla.",
+      "options": [
+        "Seni gururlandıran küçük bir beceri nedir?",
+        "Hangi yemeği icat ederdin?",
+        "Son zamanlarda seni en çok ne güldürdü?",
+        "Bir sonraki hobi olarak neyi denerdin?",
+        "Şimdiye kadarki en tuhaf rüyan neydi?",
+        "Hangi kurgusal mesleği severek yapardın?"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "cesaret-masada-kalarak",
+      "title": "Masada Kalarak Cesaretler",
+      "category": "eglence",
+      "description": "Yerinden kalkmadan kısa bir cesaret görevini yap.",
+      "options": [
+        "Bir kaşığa kabul konuşması yap",
+        "Çok yavaş bir robotu canlandır",
+        "Uzaylılar için bir selamlama icat et",
+        "Hayali bir şemsiye sat",
+        "Bir bardak su doldurmayı spiker gibi anlat",
+        "Neşeli bir hava durumu raporu sun"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "never-have-i-ever-kucuk-maceralar",
+      "title": "Hiç Yapmadım: Küçük Maceralar",
+      "category": "eglence",
+      "description": "Her seçenek \"Hiç yapmadım\" cümlesini tamamlar. Yaptıysan bir parmağını indir.",
+      "options": [
+        "Çadırda uyumak",
+        "Sıfırdan ekmek yapmak",
+        "Uçurtma uçurmak",
+        "Kardan heykel yapmak",
+        "Seramik denemek",
+        "Kayan yıldız görmek"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "charades-gunluk-hareketler",
+      "title": "Jest: Günlük Hareketler",
+      "category": "eglence",
+      "description": "Tanıdık bir eylemi sessizce canlandır, diğerleri tahmin etsin.",
+      "options": [
+        "Lastikli çarşaf katlamak",
+        "Otobüse yetişmeye çalışmak",
+        "Inatçı bir köpeği gezdirmek",
+        "Sıkışmış bir kavanozu açmak",
+        "Hediye paketlemek",
+        "Gözlüğünü kafasının üstünde arayıp bulmak"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "cizim-hizli-nesneler",
+      "title": "Hızlı Çizim: Günlük Nesneler",
+      "category": "eglence",
+      "description": "Bir nesneyi sessizce çiz, diğerleri tahmin etsin.",
+      "options": [
+        "Şemsiye",
+        "Merdiven",
+        "Demlik",
+        "Uçurtma",
+        "Sırt çantası",
+        "Deniz feneri"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "kim-ben-hayvan",
+      "title": "Ben Kimim?: Hayvanlar",
+      "category": "eglence",
+      "description": "Bir hayvan seç, tahmin edenden gizle ve evet ya da hayır sorularını cevapla.",
+      "options": [
+        "Su samuru",
+        "Zürafa",
+        "Kirpi",
+        "Ahtapot",
+        "Penguen",
+        "Kelebek"
+      ],
+      "featured": false,
+      "requiresCustomization": false
     }
   ]
 }
