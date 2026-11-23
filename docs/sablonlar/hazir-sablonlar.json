@@ -629,6 +629,166 @@
       ],
       "featured": false,
       "requiresCustomization": false
+    },
+    {
+      "id": "discord-mikrofonsuz-tanisma",
+      "title": "Mikrofonsuz Tanışma",
+      "category": "eglence",
+      "description": "Yazmayı tercih edenler için bir istem. Kısa cevaplar da yeterli.",
+      "options": [
+        "Bugünü üç emojiyle anlat",
+        "İki kelimelik bir gezegen icat et",
+        "Hayali kafenin adını söyle",
+        "Klavyene bir lakap ver",
+        "Bir ejderhayı kötü tarif et",
+        "Beş kelimelik bir macera yaz"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "discord-seslendirme-studyosu",
+      "title": "Seslendirme Stüdyosu",
+      "category": "eglence",
+      "description": "Gönüllüler seçilen karakterin sesiyle selam verir. Gerçek kişileri ya da aksanları taklit etme.",
+      "options": [
+        "Uykulu uzay gemisi kaptanı",
+        "Aşırı heyecanlı müze rehberi",
+        "Kibar zindan bekçisi",
+        "Şaşkın hava durumu robotu",
+        "Dramatik bahçe salyangozu",
+        "Neşeli ay kütüphanecisi"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "discord-haftalik-kucuk-kazanimlar",
+      "title": "Haftalık Küçük Kazanımlar",
+      "category": "eglence",
+      "description": "Haftalık tekrarlayan bir istem. Üyeler uygun oldukları zaman cevaplar; puan ya da sıralama yok.",
+      "options": [
+        "Bitirdiğin bir şey",
+        "Başladığın bir şey",
+        "Faydalı bir hata",
+        "Birlikte çalışmanın güzel bir anı",
+        "Sonunda cevapladığın bir soru",
+        "Fark ettiğin küçük bir iyileşme"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "discord-kooperatif-yan-gorev",
+      "title": "Kooperatif Yan Görev",
+      "category": "eglence",
+      "description": "Herkesin katılmayı kabul ettiği özel bir oturum için ortak bir hedef seç.",
+      "options": [
+        "Her takım arkadaşına işe yarar bir eşya ver",
+        "Bilinmeyen bir bölgeyi keşfet",
+        "Ortak bir dinlenme noktası kur",
+        "Bir başlangıç tekniğini öğret",
+        "Grupla bir ekran görüntüsü al",
+        "İsteğe bağlı bir hedefi tamamla"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "discord-izleme-mercekleri",
+      "title": "İzleme Partisi Mercekleri",
+      "category": "eglence",
+      "description": "Zaten yasal olarak sahip olduğun bir kayıtta dikkat edilecek bir şey seç, sonra konuş.",
+      "options": [
+        "Arka plandaki görsel ayrıntılar",
+        "Mekânın nasıl değiştiği",
+        "Bir karakterin küçük bir iyiliği",
+        "Sessizliğin kullanımı",
+        "Renk tercihleri",
+        "Çözülmeyen bir soru"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "yayin-bekleyen-oyun-rotasi",
+      "title": "Bekleyen Oyun Rotası",
+      "category": "oyun",
+      "description": "Bu yayın için zaten sahip olduğun oyunlardan bir tür seç.",
+      "options": [
+        "Yarım kalmış bir macera",
+        "Unutulmuş bir bulmaca oyunu",
+        "Alışılmış, rahat bir oyun",
+        "Zaten yüklü kısa bir oyun",
+        "Hiç bitirmediğin bir eğitim",
+        "Eski kayıtlı bir sandbox oyunu"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "yayin-onayli-sohbet-onerileri",
+      "title": "Onaylı Sohbet Önerileri",
+      "category": "oyun",
+      "description": "Moderatörler onaylanmış önerileri yapıştırır, ardından birini çevirir. Bu bir fikir seçer, kazanan bir izleyici değil.",
+      "options": [
+        "Çatı bahçesi kur",
+        "Robot kütüphaneci çiz",
+        "Unutulmuş bir patikayı keşfet",
+        "Bir başlangıç kısayolunu anlat",
+        "Küçük bir atölyeyi süsle",
+        "Dost canlısı bir canavar icat et"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "yayin-sonraki-oyun-ici-hedef",
+      "title": "Sonraki Oyun İçi Hedef",
+      "category": "oyun",
+      "description": "Sonraki bölüm için bir hedef seç. Çevirmeden önce mevcut oyunda olmayanları çıkar.",
+      "options": [
+        "Bir yan görevi tamamla",
+        "Hiç gidilmemiş bir bölgeyi keşfet",
+        "Ana üssü geliştir",
+        "Bir mekaniği pratik et",
+        "İsteğe bağlı bir koleksiyon eşyası bul",
+        "Dost bir karaktere yardım et"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "yayin-karakter-gecmisi",
+      "title": "Karakter Geçmişi Tohumu",
+      "category": "oyun",
+      "description": "Yeni bir karaktere, mevcut bir serinin diyaloglarına dayanmadan basit bir motivasyon ver.",
+      "options": [
+        "Macera arayan emekli haritacı",
+        "Nadir tohum arayan bahçıvan",
+        "Sıra dışı tarifler toplayan aşçı",
+        "Kaybolmaktan korkan kurye",
+        "Unutulmuş kitapları kurtaran kütüphaneci",
+        "Eski bir evi restore eden tamirci"
+      ],
+      "featured": false,
+      "requiresCustomization": false
+    },
+    {
+      "id": "yayin-turlar-arasi-mini-bolum",
+      "title": "Turlar Arası Mini Bölüm",
+      "category": "oyun",
+      "description": "Yükleme ekranı ya da turlar arasındaki sakin bir an için kısa bir etkinlik seç.",
+      "options": [
+        "Son kararı açıkla",
+        "Son karşılaşmayı çiz",
+        "Bir başlangıç ipucu paylaş",
+        "Mevcut hedefi özetle",
+        "Bir eşya açıklaması uydur",
+        "Oyunu beş kelimeyle anlat"
+      ],
+      "featured": false,
+      "requiresCustomization": false
     }
   ]
 }
